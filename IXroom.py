@@ -12,7 +12,7 @@ prevt = 0
 url = "https://cog-ams-control.pxsuite.app/api/public/1a8e44c8-3213-4287-8c70-289c40e20493/presentations/trigger-event"
 
 headers = {
-  'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzIzMTk0MjEsImlzcyI6ImNvZy1hbXMiLCJleHAiOjE2ODIzNDgyMjF9.3Mz2fACFHwFP4G5Z0_1lzz8CzxuVfaBqnlcjmNeplpE',
+  'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb2ctYW1zIiwiaWF0IjoxNjc3NjczOTg1LCJleHAiOjE2Nzg2NzM5ODV9.fDdCAg3KSbEeV497LiiKJ9TncOU1Z7ze4iCxqG1bIYI',
   'Content-Type': 'application/json'
 }
 
