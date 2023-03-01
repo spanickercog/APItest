@@ -5,4 +5,4 @@
 4.  Login using the Id and password.
 5.  Choose "IX Room" from the list.
 6. Make sure all tags and achors are discovered. If not, select "Discover devices" and see if everything is detected - 3 anchors and 2 tags.
-![setup][setup.png]
+<img width="913" alt="setup" src="https://user-images.githubusercontent.com/125373347/218769525-277ef5d0-5d78-43dc-b8e7-171eb3ed7beb.png">
