@@ -16,20 +16,17 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-host = "mqtt://localhost"
+host = "localhost"
 port = 1883
 topic = "tags"  # your mqtt topic
-# username = "63760b33be56a1d2bbb173ca"  # your mqtt username
-# password = "267ff0e8-2b7a-4bef-9bbf-78a9ba763638"  # your generated api key
 
 def on_connect(client, userdata, flags, rc):
     print(mqtt.connack_string(rc))
-    client.subscribe(topic)
     
 # Callback triggered by a new Pozyx data packet
 def on_message(client, userdata, msg):
-    print("Positioning update:", msg.payload.decode())
-    # pass_to_func_and_pub(msg.payload)
+    #print("Positioning update:", msg.payload.decode())
+    pass_to_func_and_pub(msg.payload)
 
 def on_subscribe(client, userdata, mid, granted_qos):
     print("Subscribed to topic!")
@@ -104,11 +101,7 @@ def pass_to_func_and_pub(data_to_pub):
             else:
                 t = time.time()
         
-client = mqtt.Client()
-# client.username_pw_set(username, password = password)
-
-# sets the secure context, enabling the WSS protocol
-# client.tls_set_context(context=ssl.create_default_context())
+client = mqtt.Client(transport = "websockets")
 
 # set callbacks
 client.on_connect = on_connect
